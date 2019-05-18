@@ -17,13 +17,17 @@ from django.contrib import admin
 from django.conf.urls import url, include
 from rest_framework.routers import DefaultRouter
 
+from missions.views import MissionsViewSet
 from projects.views import ProjectListViewSet
 from users.views import UserViewSet
 
 router = DefaultRouter()
 
 router.register(r'projects', ProjectListViewSet, base_name="projects")
+
 router.register(r'user', UserViewSet, base_name="user")
+
+router.register(r'missions', MissionsViewSet, base_name="missions")
 
 urlpatterns = [
     url('admin/', admin.site.urls),

@@ -20,4 +20,5 @@ class ProjectsPagination(PageNumberPagination):
 class ProjectListViewSet(viewsets.GenericViewSet, mixins.ListModelMixin, mixins.CreateModelMixin, mixins.DestroyModelMixin):
 
     serializer_class = ProjectsSerializer
+    pagination_class = ProjectsPagination
     queryset = Projects.objects.all()

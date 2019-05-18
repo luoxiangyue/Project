@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'django_filters',
     'users.apps.UsersConfig',
     'projects.apps.ProjectsConfig',
+    'missions.apps.MissionsConfig',
 ]
 
 MIDDLEWARE = [
@@ -87,7 +88,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': "project",
         'USER': 'root',
-        'PASSWORD': "e19990720",
+        'PASSWORD': "7418529630",
         'HOST': "localhost",
         'PORT': '3306',
         'OPTIONS': {'init_command': 'SET default_storage_engine=INNODB;'}

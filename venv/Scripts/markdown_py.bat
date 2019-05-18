@@ -1,1 +1,0 @@
-@"E:\PycharmProjects\Project\venv\Scripts\python.exe" "E:\PycharmProjects\Project\venv\Scripts\markdown_py" %*
